@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "romanzipp\\LaravelDTO\\": "src"
+            "bss-php\\laraveldto\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "romanzipp\\LaravelDTO\\Tests\\": "tests"
+            "bss-php\\laraveldto\\Tests\\": "tests"
         }
     },
     "scripts": {
