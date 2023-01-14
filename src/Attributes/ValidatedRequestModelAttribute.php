@@ -1,12 +1,12 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Attributes;
+namespace bss-php\laraveldto\Attributes;
 
 use Attribute;
-use romanzipp\LaravelDTO\Attributes\Interfaces\DataAttributeInterface;
-use romanzipp\LaravelDTO\Attributes\Interfaces\ModelAttributeInterface;
-use romanzipp\LaravelDTO\Attributes\Interfaces\RequestAttributeInterface;
-use romanzipp\LaravelDTO\Attributes\Interfaces\ValidationRuleAttributeInterface;
+use bss-php\laraveldto\Attributes\Interfaces\DataAttributeInterface;
+use bss-php\laraveldto\Attributes\Interfaces\ModelAttributeInterface;
+use bss-php\laraveldto\Attributes\Interfaces\RequestAttributeInterface;
+use bss-php\laraveldto\Attributes\Interfaces\ValidationRuleAttributeInterface;
 
 #[Attribute]
 class ValidatedRequestModelAttribute implements DataAttributeInterface, ValidationRuleAttributeInterface, RequestAttributeInterface, ModelAttributeInterface

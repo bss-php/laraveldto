@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\LaravelDTO;
+namespace bss-php\laraveldto;
 
 use ReflectionClass;
 use ReflectionProperty;
-use romanzipp\LaravelDTO\Attributes\Casts\CastInterface;
-use romanzipp\LaravelDTO\Attributes\Interfaces;
+use bss-php\laraveldto\Attributes\Casts\CastInterface;
+use bss-php\laraveldto\Attributes\Interfaces;
 
 class Property
 {

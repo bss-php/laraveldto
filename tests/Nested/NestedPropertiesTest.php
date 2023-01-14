@@ -1,8 +1,8 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Tests\Nested;
+namespace bss-php\laraveldto\Tests\Nested;
 
-use romanzipp\LaravelDTO\Tests\TestCase;
+use bss-php\laraveldto\Tests\TestCase;
 
 class NestedPropertiesTest extends TestCase
 {

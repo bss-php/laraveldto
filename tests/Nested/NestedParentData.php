@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Tests\Nested;
+namespace bss-php\laraveldto\Tests\Nested;
 
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\NestedModelData;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\NestedModelData;
 
 class NestedParentData extends AbstractModelData
 {

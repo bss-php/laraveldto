@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Attributes;
+namespace bss-php\laraveldto\Attributes;
 
 use Attribute;
 

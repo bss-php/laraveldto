@@ -1,15 +1,15 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Tests;
+namespace bss-php\laraveldto\Tests;
 
 use Carbon\Carbon;
 use Carbon\CarbonImmutable;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\Casts\CastToDate;
-use romanzipp\LaravelDTO\Attributes\RequestAttribute;
-use romanzipp\LaravelDTO\Attributes\ValidationRule;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\Casts\CastToDate;
+use bss-php\laraveldto\Attributes\RequestAttribute;
+use bss-php\laraveldto\Attributes\ValidationRule;
 
 class CastTest extends TestCase
 {

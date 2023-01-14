@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Tests\Model;
+namespace bss-php\laraveldto\Tests\Model;
 
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\ForModel;
-use romanzipp\LaravelDTO\Attributes\ModelAttribute;
-use romanzipp\LaravelDTO\Tests\TestCase;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\ForModel;
+use bss-php\laraveldto\Attributes\ModelAttribute;
+use bss-php\laraveldto\Tests\TestCase;
 
 class ModelTest extends TestCase
 {

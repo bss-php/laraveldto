@@ -1,9 +1,9 @@
 # Laravel DTO
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/romanzipp/Laravel-DTO.svg?style=flat-square)](https://packagist.org/packages/romanzipp/laravel-dto)
-[![Total Downloads](https://img.shields.io/packagist/dt/romanzipp/Laravel-DTO.svg?style=flat-square)](https://packagist.org/packages/romanzipp/laravel-dto)
-[![License](https://img.shields.io/packagist/l/romanzipp/Laravel-DTO.svg?style=flat-square)](https://packagist.org/packages/romanzipp/laravel-dto)
-[![GitHub Build Status](https://img.shields.io/github/workflow/status/romanzipp/Laravel-DTO/Tests?style=flat-square)](https://github.com/romanzipp/Laravel-DTO/actions)
+[![Latest Stable Version](https://img.shields.io/packagist/v/bss-php/laraveldto.svg?style=flat-square)](https://packagist.org/packages/bss-php/laraveldto)
+[![Total Downloads](https://img.shields.io/packagist/dt/bss-php/laraveldto.svg?style=flat-square)](https://packagist.org/packages/bss-php/laraveldto)
+[![License](https://img.shields.io/packagist/l/bss-php/laraveldto.svg?style=flat-square)](https://packagist.org/packages/bss-php/laraveldto)
+[![GitHub Build Status](https://img.shields.io/github/workflow/status/bss-php/laraveldto/Tests?style=flat-square)](https://github.com/bss-php/laraveldto/actions)
 
 A strongly typed Data Transfer Object **for Laravel** without magic for PHP 8.0+
 
@@ -26,12 +26,12 @@ Laravel-DTO serves as an **intermediate and reusable layer** between request inp
 ## Installation
 
 ```
-composer require romanzipp/laravel-dto
+composer require bss-php/laraveldto
 ```
 
 ## Usage
 
-All data objects must extend the [`romanzipp\LaravelDTO\AbstractModelData`](src/AbstractModelData.php) class.
+All data objects must extend the [`bss-php\laraveldto\AbstractModelData`](src/AbstractModelData.php) class.
 
 ### Validation
 
@@ -41,9 +41,9 @@ When attaching the [`#[ValidationRule]`](src/Attributes/ValidationRule.php) any 
 use App\Models\Person;
 use App\Models\Project;
 use Illuminate\Validation\Rules\Exists;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\ForModel;
-use romanzipp\LaravelDTO\Attributes\ValidationRule;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\ForModel;
+use bss-php\laraveldto\Attributes\ValidationRule;
 
 class PersonData extends AbstractModelData
 {
@@ -80,9 +80,9 @@ If no parameter is passed to the [`#[ModelAttribute]`](src/Attributes/ModelAttri
 
 ```php
 use App\Models\Person;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\ForModel;
-use romanzipp\LaravelDTO\Attributes\ModelAttribute;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\ForModel;
+use bss-php\laraveldto\Attributes\ModelAttribute;
 
 #[ForModel(Person::class)]
 class PersonData extends AbstractModelData
@@ -134,10 +134,10 @@ When attaching the [`#[RequestAttribute]`](src/Attributes/RequestAttribute.php) 
 
 ```php
 use App\Models\Person;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\ForModel;
-use romanzipp\LaravelDTO\Attributes\ModelAttribute;
-use romanzipp\LaravelDTO\Attributes\RequestAttribute;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\ForModel;
+use bss-php\laraveldto\Attributes\ModelAttribute;
+use bss-php\laraveldto\Attributes\RequestAttribute;
 
 #[ForModel(Person::class)]
 class PersonData extends AbstractModelData
@@ -195,12 +195,12 @@ Both properties in the following example behave exactly the same. Use as you pre
 ```php
 use App\Models\Person;
 use Illuminate\Validation\Rules\Exists;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\ForModel;
-use romanzipp\LaravelDTO\Attributes\ModelAttribute;
-use romanzipp\LaravelDTO\Attributes\RequestAttribute;
-use romanzipp\LaravelDTO\Attributes\ValidatedRequestModelAttribute;
-use romanzipp\LaravelDTO\Attributes\ValidationRule;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\ForModel;
+use bss-php\laraveldto\Attributes\ModelAttribute;
+use bss-php\laraveldto\Attributes\RequestAttribute;
+use bss-php\laraveldto\Attributes\ValidatedRequestModelAttribute;
+use bss-php\laraveldto\Attributes\ValidationRule;
 
 #[ForModel(Person::class)]
 class PersonData extends AbstractModelData
@@ -255,12 +255,12 @@ All attributes attached to the nested DTO will just work as expected.
 
 ```php
 use App\Models\Person;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\ForModel;
-use romanzipp\LaravelDTO\Attributes\NestedModelData;
-use romanzipp\LaravelDTO\Attributes\RequestAttribute;
-use romanzipp\LaravelDTO\Attributes\ValidatedRequestModelAttribute;
-use romanzipp\LaravelDTO\Attributes\ValidationRule;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\ForModel;
+use bss-php\laraveldto\Attributes\NestedModelData;
+use bss-php\laraveldto\Attributes\RequestAttribute;
+use bss-php\laraveldto\Attributes\ValidatedRequestModelAttribute;
+use bss-php\laraveldto\Attributes\ValidationRule;
 
 #[ForModel(Person::class)]
 class PersonData extends AbstractModelData
@@ -278,8 +278,8 @@ class PersonData extends AbstractModelData
 
 ```php
 use App\Models\Address;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\ValidatedRequestModelAttribute;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\ValidatedRequestModelAttribute;
 
 #[ForModel(Address::class)]
 class AddressData extends AbstractModelData
@@ -347,8 +347,8 @@ You can also specify a custom date class to be used by passing the date class na
 
 ```php
 use Carbon\Carbon;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\Casts\CastToDate;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\Casts\CastToDate;
 
 class PersonData extends AbstractModelData
 {
@@ -363,7 +363,7 @@ You can declare custom type cast attributes by simply implementing the [`CastInt
 
 ```php
 use Attribute;
-use romanzipp\LaravelDTO\Attributes\Casts\CastInterface;
+use bss-php\laraveldto\Attributes\Casts\CastInterface;
 
 #[Attribute]
 class MyCast implements CastInterface
@@ -381,9 +381,9 @@ Make sure to add a `@method` PHPDoc comment like shown below to allow IDE and st
 
 ```php
 use App\Models\Person;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\ForModel;
-use romanzipp\LaravelDTO\Attributes\ModelAttribute;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\ForModel;
+use bss-php\laraveldto\Attributes\ModelAttribute;
 
 /**
  * @method Person toModel()

@@ -1,13 +1,13 @@
 {
-    "name": "romanzipp/laravel-dto",
+    "name": "bss-php/laraveldto",
     "description": "A strongly typed Data Transfer Object integration for Laravel",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "romanzipp",
-            "email": "ich@ich.wtf",
-            "homepage": "https://ich.wtf"
+            "name": "bss",
+            "email": "",
+            "homepage": ""
         }
     ],
     "require": {

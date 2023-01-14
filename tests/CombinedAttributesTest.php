@@ -1,15 +1,15 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Tests;
+namespace bss-php\laraveldto\Tests;
 
 use Illuminate\Http\Request;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\ForModel;
-use romanzipp\LaravelDTO\Attributes\ModelAttribute;
-use romanzipp\LaravelDTO\Attributes\RequestAttribute;
-use romanzipp\LaravelDTO\Attributes\ValidatedRequestModelAttribute;
-use romanzipp\LaravelDTO\Attributes\ValidationRule;
-use romanzipp\LaravelDTO\Tests\Model\SampleModel;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\ForModel;
+use bss-php\laraveldto\Attributes\ModelAttribute;
+use bss-php\laraveldto\Attributes\RequestAttribute;
+use bss-php\laraveldto\Attributes\ValidatedRequestModelAttribute;
+use bss-php\laraveldto\Attributes\ValidationRule;
+use bss-php\laraveldto\Tests\Model\SampleModel;
 
 class CombinedAttributesTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Attributes\Interfaces;
+namespace bss-php\laraveldto\Attributes\Interfaces;
 
 interface ValidationRuleAttributeInterface
 {

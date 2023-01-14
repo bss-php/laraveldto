@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\LaravelDTO;
+namespace bss-php\laraveldto;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
@@ -9,7 +9,7 @@ use Illuminate\Validation\ValidationException;
 use ReflectionClass;
 use romanzipp\DTO\AbstractData;
 use romanzipp\DTO\Exceptions\InvalidDataException;
-use romanzipp\LaravelDTO\Attributes\ForModel;
+use bss-php\laraveldto\Attributes\ForModel;
 use RuntimeException;
 
 abstract class AbstractModelData extends AbstractData
@@ -69,7 +69,7 @@ abstract class AbstractModelData extends AbstractData
 
                 foreach ($data[$property->getName()] as $datum) {
                     /**
-                     * @var $nestedClass \romanzipp\LaravelDTO\AbstractModelData
+                     * @var $nestedClass \bss-php\laraveldto\AbstractModelData
                      */
                     if (isset($data[self::FLAG_IS_REQUEST_DATA])) {
                         $datum[self::FLAG_IS_REQUEST_DATA] = true;
@@ -102,7 +102,7 @@ abstract class AbstractModelData extends AbstractData
     /**
      * Take request input and fill into DTO base on the #[RequestAttribute].
      *
-     * @see \romanzipp\LaravelDTO\Attributes\RequestAttribute
+     * @see \bss-php\laraveldto\Attributes\RequestAttribute
      *
      * @param \Illuminate\Http\Request $request
      *

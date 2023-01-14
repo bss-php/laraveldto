@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Tests\Model;
+namespace bss-php\laraveldto\Tests\Model;
 
 use Illuminate\Database\Eloquent\Model;
 

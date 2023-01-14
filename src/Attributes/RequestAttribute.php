@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Attributes;
+namespace bss-php\laraveldto\Attributes;
 
 use Attribute;
-use romanzipp\LaravelDTO\Attributes\Interfaces\DataAttributeInterface;
-use romanzipp\LaravelDTO\Attributes\Interfaces\RequestAttributeInterface;
+use bss-php\laraveldto\Attributes\Interfaces\DataAttributeInterface;
+use bss-php\laraveldto\Attributes\Interfaces\RequestAttributeInterface;
 
 #[Attribute]
 class RequestAttribute implements DataAttributeInterface, RequestAttributeInterface

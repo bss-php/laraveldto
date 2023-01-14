@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Attributes\Casts;
+namespace bss-php\laraveldto\Attributes\Casts;
 
 use Attribute;
 

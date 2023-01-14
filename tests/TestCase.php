@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Tests;
+namespace bss-php\laraveldto\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
 use romanzipp\DTO\Property;

@@ -1,13 +1,13 @@
 <?php
 
-namespace romanzipp\LaravelDTO\Tests;
+namespace bss-php\laraveldto\Tests;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
-use romanzipp\LaravelDTO\AbstractModelData;
-use romanzipp\LaravelDTO\Attributes\NestedModelData;
-use romanzipp\LaravelDTO\Attributes\RequestAttribute;
-use romanzipp\LaravelDTO\Attributes\ValidationRule;
+use bss-php\laraveldto\AbstractModelData;
+use bss-php\laraveldto\Attributes\NestedModelData;
+use bss-php\laraveldto\Attributes\RequestAttribute;
+use bss-php\laraveldto\Attributes\ValidationRule;
 
 class RequestTest extends TestCase
 {
@@ -118,7 +118,7 @@ class RequestSampleDataNested extends AbstractModelData
     public string $name;
 
     /**
-     * @var \romanzipp\LaravelDTO\Tests\RequestSampleDataNestedItem[]
+     * @var \bss-php\laraveldto\Tests\RequestSampleDataNestedItem[]
      */
     #[NestedModelData(RequestSampleDataNestedItem::class), ValidationRule(['required']), RequestAttribute]
     public array $items;
