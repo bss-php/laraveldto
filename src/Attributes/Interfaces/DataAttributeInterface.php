@@ -1,6 +1,6 @@
 <?php
 
-namespace bss-php\laraveldto\Attributes\Interfaces;
+namespace bssphp\laraveldto\Attributes\Interfaces;
 
 interface DataAttributeInterface
 {

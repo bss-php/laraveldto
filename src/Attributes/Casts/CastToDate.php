@@ -1,6 +1,6 @@
 <?php
 
-namespace bss-php\laraveldto\Attributes\Casts;
+namespace bssphp\laraveldto\Attributes\Casts;
 
 use Attribute;
 

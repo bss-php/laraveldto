@@ -1,13 +1,13 @@
 # Laravel DTO
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/bss-php/laraveldto.svg?style=flat-square)](https://packagist.org/packages/bss-php/laraveldto)
-[![Total Downloads](https://img.shields.io/packagist/dt/bss-php/laraveldto.svg?style=flat-square)](https://packagist.org/packages/bss-php/laraveldto)
-[![License](https://img.shields.io/packagist/l/bss-php/laraveldto.svg?style=flat-square)](https://packagist.org/packages/bss-php/laraveldto)
-[![GitHub Build Status](https://img.shields.io/github/workflow/status/bss-php/laraveldto/Tests?style=flat-square)](https://github.com/bss-php/laraveldto/actions)
+[![Latest Stable Version](https://img.shields.io/packagist/v/bssphp/laraveldto.svg?style=flat-square)](https://packagist.org/packages/bssphp/laraveldto)
+[![Total Downloads](https://img.shields.io/packagist/dt/bssphp/laraveldto.svg?style=flat-square)](https://packagist.org/packages/bssphp/laraveldto)
+[![License](https://img.shields.io/packagist/l/bssphp/laraveldto.svg?style=flat-square)](https://packagist.org/packages/bssphp/laraveldto)
+[![GitHub Build Status](https://img.shields.io/github/workflow/status/bssphp/laraveldto/Tests?style=flat-square)](https://github.com/bssphp/laraveldto/actions)
 
 A strongly typed Data Transfer Object **for Laravel** without magic for PHP 8.0+
 
-This package extends the functionality of [**bss-php/DTO**](https://github.com/bss-php/DTO) to provide more narrow usecases for Laravel applications.
+This package extends the functionality of [**bssphp/DTO**](https://github.com/bssphp/DTO) to provide more narrow usecases for Laravel applications.
 
 Laravel-DTO serves as an **intermediate and reusable layer** between request input & validation and model attribute population.
 
@@ -26,12 +26,12 @@ Laravel-DTO serves as an **intermediate and reusable layer** between request inp
 ## Installation
 
 ```
-composer require bss-php/laraveldto
+composer require bssphp/laraveldto
 ```
 
 ## Usage
 
-All data objects must extend the [`bss-php\laraveldto\AbstractModelData`](src/AbstractModelData.php) class.
+All data objects must extend the [`bssphp\laraveldto\AbstractModelData`](src/AbstractModelData.php) class.
 
 ### Validation
 
@@ -41,9 +41,9 @@ When attaching the [`#[ValidationRule]`](src/Attributes/ValidationRule.php) any 
 use App\Models\Person;
 use App\Models\Project;
 use Illuminate\Validation\Rules\Exists;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\ForModel;
-use bss-php\laraveldto\Attributes\ValidationRule;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\ForModel;
+use bssphp\laraveldto\Attributes\ValidationRule;
 
 class PersonData extends AbstractModelData
 {
@@ -80,9 +80,9 @@ If no parameter is passed to the [`#[ModelAttribute]`](src/Attributes/ModelAttri
 
 ```php
 use App\Models\Person;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\ForModel;
-use bss-php\laraveldto\Attributes\ModelAttribute;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\ForModel;
+use bssphp\laraveldto\Attributes\ModelAttribute;
 
 #[ForModel(Person::class)]
 class PersonData extends AbstractModelData
@@ -134,10 +134,10 @@ When attaching the [`#[RequestAttribute]`](src/Attributes/RequestAttribute.php) 
 
 ```php
 use App\Models\Person;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\ForModel;
-use bss-php\laraveldto\Attributes\ModelAttribute;
-use bss-php\laraveldto\Attributes\RequestAttribute;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\ForModel;
+use bssphp\laraveldto\Attributes\ModelAttribute;
+use bssphp\laraveldto\Attributes\RequestAttribute;
 
 #[ForModel(Person::class)]
 class PersonData extends AbstractModelData
@@ -195,12 +195,12 @@ Both properties in the following example behave exactly the same. Use as you pre
 ```php
 use App\Models\Person;
 use Illuminate\Validation\Rules\Exists;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\ForModel;
-use bss-php\laraveldto\Attributes\ModelAttribute;
-use bss-php\laraveldto\Attributes\RequestAttribute;
-use bss-php\laraveldto\Attributes\ValidatedRequestModelAttribute;
-use bss-php\laraveldto\Attributes\ValidationRule;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\ForModel;
+use bssphp\laraveldto\Attributes\ModelAttribute;
+use bssphp\laraveldto\Attributes\RequestAttribute;
+use bssphp\laraveldto\Attributes\ValidatedRequestModelAttribute;
+use bssphp\laraveldto\Attributes\ValidationRule;
 
 #[ForModel(Person::class)]
 class PersonData extends AbstractModelData
@@ -255,12 +255,12 @@ All attributes attached to the nested DTO will just work as expected.
 
 ```php
 use App\Models\Person;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\ForModel;
-use bss-php\laraveldto\Attributes\NestedModelData;
-use bss-php\laraveldto\Attributes\RequestAttribute;
-use bss-php\laraveldto\Attributes\ValidatedRequestModelAttribute;
-use bss-php\laraveldto\Attributes\ValidationRule;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\ForModel;
+use bssphp\laraveldto\Attributes\NestedModelData;
+use bssphp\laraveldto\Attributes\RequestAttribute;
+use bssphp\laraveldto\Attributes\ValidatedRequestModelAttribute;
+use bssphp\laraveldto\Attributes\ValidationRule;
 
 #[ForModel(Person::class)]
 class PersonData extends AbstractModelData
@@ -278,8 +278,8 @@ class PersonData extends AbstractModelData
 
 ```php
 use App\Models\Address;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\ValidatedRequestModelAttribute;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\ValidatedRequestModelAttribute;
 
 #[ForModel(Address::class)]
 class AddressData extends AbstractModelData
@@ -347,8 +347,8 @@ You can also specify a custom date class to be used by passing the date class na
 
 ```php
 use Carbon\Carbon;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\Casts\CastToDate;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\Casts\CastToDate;
 
 class PersonData extends AbstractModelData
 {
@@ -363,7 +363,7 @@ You can declare custom type cast attributes by simply implementing the [`CastInt
 
 ```php
 use Attribute;
-use bss-php\laraveldto\Attributes\Casts\CastInterface;
+use bssphp\laraveldto\Attributes\Casts\CastInterface;
 
 #[Attribute]
 class MyCast implements CastInterface
@@ -381,9 +381,9 @@ Make sure to add a `@method` PHPDoc comment like shown below to allow IDE and st
 
 ```php
 use App\Models\Person;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\ForModel;
-use bss-php\laraveldto\Attributes\ModelAttribute;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\ForModel;
+use bssphp\laraveldto\Attributes\ModelAttribute;
 
 /**
  * @method Person toModel()
@@ -420,4 +420,4 @@ class PersonData extends AbstractModelData
 
 ## Authors
 
-- [Roman Zipp](https://github.com/bss-php)
+- [Roman Zipp](https://github.com/bssphp)

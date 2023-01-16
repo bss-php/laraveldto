@@ -1,6 +1,6 @@
 <?php
 
-namespace bss-php\laraveldto\Tests\Model;
+namespace bssphp\laraveldto\Tests\Model;
 
 use Illuminate\Database\Eloquent\Model;
 

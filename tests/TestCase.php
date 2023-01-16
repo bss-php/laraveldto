@@ -1,9 +1,9 @@
 <?php
 
-namespace bss-php\laraveldto\Tests;
+namespace bssphp\laraveldto\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use bss-php\DTO\Property;
+use bssphp\DTO\Property;
 
 abstract class TestCase extends BaseTestCase
 {

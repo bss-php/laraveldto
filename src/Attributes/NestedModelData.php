@@ -1,6 +1,6 @@
 <?php
 
-namespace bss-php\laraveldto\Attributes;
+namespace bssphp\laraveldto\Attributes;
 
 use Attribute;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace bss-php\laraveldto\Tests\Model;
+namespace bssphp\laraveldto\Tests\Model;
 
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\ForModel;
-use bss-php\laraveldto\Attributes\ModelAttribute;
-use bss-php\laraveldto\Attributes\ValidationRule;
-use bss-php\laraveldto\Tests\TestCase;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\ForModel;
+use bssphp\laraveldto\Attributes\ModelAttribute;
+use bssphp\laraveldto\Attributes\ValidationRule;
+use bssphp\laraveldto\Tests\TestCase;
 use RuntimeException;
 
 class CreateFromModelTest extends TestCase

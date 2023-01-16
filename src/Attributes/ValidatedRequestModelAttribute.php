@@ -1,12 +1,12 @@
 <?php
 
-namespace bss-php\laraveldto\Attributes;
+namespace bssphp\laraveldto\Attributes;
 
 use Attribute;
-use bss-php\laraveldto\Attributes\Interfaces\DataAttributeInterface;
-use bss-php\laraveldto\Attributes\Interfaces\ModelAttributeInterface;
-use bss-php\laraveldto\Attributes\Interfaces\RequestAttributeInterface;
-use bss-php\laraveldto\Attributes\Interfaces\ValidationRuleAttributeInterface;
+use bssphp\laraveldto\Attributes\Interfaces\DataAttributeInterface;
+use bssphp\laraveldto\Attributes\Interfaces\ModelAttributeInterface;
+use bssphp\laraveldto\Attributes\Interfaces\RequestAttributeInterface;
+use bssphp\laraveldto\Attributes\Interfaces\ValidationRuleAttributeInterface;
 
 #[Attribute]
 class ValidatedRequestModelAttribute implements DataAttributeInterface, ValidationRuleAttributeInterface, RequestAttributeInterface, ModelAttributeInterface

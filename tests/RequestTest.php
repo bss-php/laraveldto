@@ -1,13 +1,13 @@
 <?php
 
-namespace bss-php\laraveldto\Tests;
+namespace bssphp\laraveldto\Tests;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\NestedModelData;
-use bss-php\laraveldto\Attributes\RequestAttribute;
-use bss-php\laraveldto\Attributes\ValidationRule;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\NestedModelData;
+use bssphp\laraveldto\Attributes\RequestAttribute;
+use bssphp\laraveldto\Attributes\ValidationRule;
 
 class RequestTest extends TestCase
 {
@@ -118,7 +118,7 @@ class RequestSampleDataNested extends AbstractModelData
     public string $name;
 
     /**
-     * @var \bss-php\laraveldto\Tests\RequestSampleDataNestedItem[]
+     * @var \bssphp\laraveldto\Tests\RequestSampleDataNestedItem[]
      */
     #[NestedModelData(RequestSampleDataNestedItem::class), ValidationRule(['required']), RequestAttribute]
     public array $items;

@@ -1,10 +1,10 @@
 <?php
 
-namespace bss-php\laraveldto\Attributes;
+namespace bssphp\laraveldto\Attributes;
 
 use Attribute;
-use bss-php\laraveldto\Attributes\Interfaces\DataAttributeInterface;
-use bss-php\laraveldto\Attributes\Interfaces\RequestAttributeInterface;
+use bssphp\laraveldto\Attributes\Interfaces\DataAttributeInterface;
+use bssphp\laraveldto\Attributes\Interfaces\RequestAttributeInterface;
 
 #[Attribute]
 class RequestAttribute implements DataAttributeInterface, RequestAttributeInterface

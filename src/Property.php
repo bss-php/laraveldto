@@ -1,11 +1,11 @@
 <?php
 
-namespace bss-php\laraveldto;
+namespace bssphp\laraveldto;
 
 use ReflectionClass;
 use ReflectionProperty;
-use bss-php\laraveldto\Attributes\Casts\CastInterface;
-use bss-php\laraveldto\Attributes\Interfaces;
+use bssphp\laraveldto\Attributes\Casts\CastInterface;
+use bssphp\laraveldto\Attributes\Interfaces;
 
 class Property
 {

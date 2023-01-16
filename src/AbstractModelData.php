@@ -1,15 +1,15 @@
 <?php
 
-namespace bss-php\laraveldto;
+namespace bssphp\laraveldto;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use ReflectionClass;
-use bss-php\DTO\AbstractData;
-use bss-php\DTO\Exceptions\InvalidDataException;
-use bss-php\laraveldto\Attributes\ForModel;
+use bssphp\DTO\AbstractData;
+use bssphp\DTO\Exceptions\InvalidDataException;
+use bssphp\laraveldto\Attributes\ForModel;
 use RuntimeException;
 
 abstract class AbstractModelData extends AbstractData
@@ -69,7 +69,7 @@ abstract class AbstractModelData extends AbstractData
 
                 foreach ($data[$property->getName()] as $datum) {
                     /**
-                     * @var $nestedClass \bss-php\laraveldto\AbstractModelData
+                     * @var $nestedClass \bssphp\laraveldto\AbstractModelData
                      */
                     if (isset($data[self::FLAG_IS_REQUEST_DATA])) {
                         $datum[self::FLAG_IS_REQUEST_DATA] = true;
@@ -102,7 +102,7 @@ abstract class AbstractModelData extends AbstractData
     /**
      * Take request input and fill into DTO base on the #[RequestAttribute].
      *
-     * @see \bss-php\laraveldto\Attributes\RequestAttribute
+     * @see \bssphp\laraveldto\Attributes\RequestAttribute
      *
      * @param \Illuminate\Http\Request $request
      *

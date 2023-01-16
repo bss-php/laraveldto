@@ -1,15 +1,15 @@
 <?php
 
-namespace bss-php\laraveldto\Tests;
+namespace bssphp\laraveldto\Tests;
 
 use Carbon\Carbon;
 use Carbon\CarbonImmutable;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\Casts\CastToDate;
-use bss-php\laraveldto\Attributes\RequestAttribute;
-use bss-php\laraveldto\Attributes\ValidationRule;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\Casts\CastToDate;
+use bssphp\laraveldto\Attributes\RequestAttribute;
+use bssphp\laraveldto\Attributes\ValidationRule;
 
 class CastTest extends TestCase
 {

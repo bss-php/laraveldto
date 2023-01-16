@@ -1,8 +1,8 @@
 <?php
 
-namespace bss-php\laraveldto\Tests\Nested;
+namespace bssphp\laraveldto\Tests\Nested;
 
-use bss-php\laraveldto\Tests\TestCase;
+use bssphp\laraveldto\Tests\TestCase;
 
 class NestedPropertiesTest extends TestCase
 {

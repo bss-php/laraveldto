@@ -1,9 +1,9 @@
 <?php
 
-namespace bss-php\laraveldto\Tests\Nested;
+namespace bssphp\laraveldto\Tests\Nested;
 
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\NestedModelData;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\NestedModelData;
 
 class NestedParentData extends AbstractModelData
 {

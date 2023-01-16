@@ -1,15 +1,15 @@
 <?php
 
-namespace bss-php\laraveldto\Tests;
+namespace bssphp\laraveldto\Tests;
 
 use Illuminate\Http\Request;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\ForModel;
-use bss-php\laraveldto\Attributes\ModelAttribute;
-use bss-php\laraveldto\Attributes\RequestAttribute;
-use bss-php\laraveldto\Attributes\ValidatedRequestModelAttribute;
-use bss-php\laraveldto\Attributes\ValidationRule;
-use bss-php\laraveldto\Tests\Model\SampleModel;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\ForModel;
+use bssphp\laraveldto\Attributes\ModelAttribute;
+use bssphp\laraveldto\Attributes\RequestAttribute;
+use bssphp\laraveldto\Attributes\ValidatedRequestModelAttribute;
+use bssphp\laraveldto\Attributes\ValidationRule;
+use bssphp\laraveldto\Tests\Model\SampleModel;
 
 class CombinedAttributesTest extends TestCase
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace bss-php\laraveldto\Tests;
+namespace bssphp\laraveldto\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Validation\ValidationException;
-use bss-php\DTO\Attributes\Required;
-use bss-php\laraveldto\AbstractModelData;
-use bss-php\laraveldto\Attributes\NestedModelData;
-use bss-php\laraveldto\Attributes\ValidationRule;
+use bssphp\DTO\Attributes\Required;
+use bssphp\laraveldto\AbstractModelData;
+use bssphp\laraveldto\Attributes\NestedModelData;
+use bssphp\laraveldto\Attributes\ValidationRule;
 
 class ValidationTest extends TestCase
 {
@@ -81,7 +81,7 @@ class ValidationTest extends TestCase
     {
         $data = new class(['items' => [['name' => 'Foo']]]) extends AbstractModelData {
             /**
-             * @var \bss-php\laraveldto\Tests\ValidationNestedItem[]
+             * @var \bssphp\laraveldto\Tests\ValidationNestedItem[]
              */
             #[NestedModelData(ValidationNestedItem::class), ValidationRule(['required', 'array'])]
             public array $items;
@@ -97,7 +97,7 @@ class ValidationTest extends TestCase
     {
         $data = new class(['items' => [['name' => 'Foo'], ['name' => 'Bar']]]) extends AbstractModelData {
             /**
-             * @var \bss-php\laraveldto\Tests\ValidationNestedItem[]
+             * @var \bssphp\laraveldto\Tests\ValidationNestedItem[]
              */
             #[NestedModelData(ValidationNestedItem::class), ValidationRule(['required', 'array'])]
             public array $items;
@@ -118,7 +118,7 @@ class ValidationTest extends TestCase
 
         new class(['items' => 'Foo']) extends AbstractModelData {
             /**
-             * @var \bss-php\laraveldto\Tests\ValidationNestedItem[]
+             * @var \bssphp\laraveldto\Tests\ValidationNestedItem[]
              */
             #[NestedModelData(ValidationNestedItem::class), ValidationRule(['required', 'array'])]
             public array $items;
@@ -132,7 +132,7 @@ class ValidationTest extends TestCase
 
         new class(['items' => null]) extends AbstractModelData {
             /**
-             * @var \bss-php\laraveldto\Tests\ValidationNestedItem[]
+             * @var \bssphp\laraveldto\Tests\ValidationNestedItem[]
              */
             #[NestedModelData(ValidationNestedItem::class), ValidationRule(['required', 'array'])]
             public array $items;
@@ -146,7 +146,7 @@ class ValidationTest extends TestCase
 
         new class([]) extends AbstractModelData {
             /**
-             * @var \bss-php\laraveldto\Tests\ValidationNestedItem[]
+             * @var \bssphp\laraveldto\Tests\ValidationNestedItem[]
              */
             #[NestedModelData(ValidationNestedItem::class), ValidationRule(['required', 'array'])]
             public array $items;
@@ -160,7 +160,7 @@ class ValidationTest extends TestCase
 
         new class(['items' => [['name' => 123]]]) extends AbstractModelData {
             /**
-             * @var \bss-php\laraveldto\Tests\ValidationNestedItem[]
+             * @var \bssphp\laraveldto\Tests\ValidationNestedItem[]
              */
             #[NestedModelData(ValidationNestedItem::class), ValidationRule(['required', 'array'])]
             public array $items;
