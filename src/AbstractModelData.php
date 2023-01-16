@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use ReflectionClass;
-use romanzipp\DTO\AbstractData;
-use romanzipp\DTO\Exceptions\InvalidDataException;
+use bss-php\DTO\AbstractData;
+use bss-php\DTO\Exceptions\InvalidDataException;
 use bss-php\laraveldto\Attributes\ForModel;
 use RuntimeException;
 

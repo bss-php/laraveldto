@@ -7,7 +7,7 @@
 
 A strongly typed Data Transfer Object **for Laravel** without magic for PHP 8.0+
 
-This package extends the functionality of [**romanzipp/DTO**](https://github.com/romanzipp/DTO) to provide more narrow usecases for Laravel applications.
+This package extends the functionality of [**bss-php/DTO**](https://github.com/bss-php/DTO) to provide more narrow usecases for Laravel applications.
 
 Laravel-DTO serves as an **intermediate and reusable layer** between request input & validation and model attribute population.
 
@@ -420,4 +420,4 @@ class PersonData extends AbstractModelData
 
 ## Authors
 
-- [Roman Zipp](https://github.com/romanzipp)
+- [Roman Zipp](https://github.com/bss-php)

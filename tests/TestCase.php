@@ -3,7 +3,7 @@
 namespace bss-php\laraveldto\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use romanzipp\DTO\Property;
+use bss-php\DTO\Property;
 
 abstract class TestCase extends BaseTestCase
 {
