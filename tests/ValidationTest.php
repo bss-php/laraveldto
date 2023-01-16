@@ -4,7 +4,7 @@ namespace bssphp\laraveldto\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Validation\ValidationException;
-use bssphp\DTO\Attributes\Required;
+use bssphp\dto\Attributes\Required;
 use bssphp\laraveldto\AbstractModelData;
 use bssphp\laraveldto\Attributes\NestedModelData;
 use bssphp\laraveldto\Attributes\ValidationRule;
